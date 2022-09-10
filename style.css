@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Mulish:wght@200;400;600;700&family=Oswald:wght@400;700&family=Poppins:wght@400;500;600;700&family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(81, 109, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 1s;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+#title {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  cursor: auto;
+}
+
+#playGame {
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(82, 109, 255);
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#page2 {
+  position: absolute;
+  transform: translateY(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+
+#subtitle {
+  width: 95%;
+  color: white;
+  font-weight: 700;
+  font-family: "Press Start 2P", cursive;
+  font-size: 32px;
+  line-height: 45px;
+  cursor: auto;
+}
+
+#insectChoices {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 97.5%;
+}
+
+.insectButton {
+  height: 170px;
+  width: 170px;
+  background-color: rgb(82, 109, 255);
+  border: 2.5px solid white;
+  cursor: pointer;
+}
+
+#fly,
+#mosquito,
+#spider,
+#roach {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#fly:hover,
+#mosquito:hover,
+#spider:hover,
+#roach:hover {
+  background-color: white;
+  color: rgb(82, 109, 255);
+}
+
+#mosquito {
+  gap: 25px;
+}
+
+#spider {
+  gap: 20px;
+}
+
+#fly,
+#mosquito,
+#spider,
+#roach {
+  padding-top: 12.5px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+#mosquito {
+  padding-top: 10px;
+}
+
+#spider {
+  padding-top: 0px;
+}
+
+.bugs {
+  width: 110px;
+}
+
+/*This is the third part where the actual game is displayed*/
+
+#theActualGame {
+  position: absolute;
+  transform: translateY(200vh);
+  /*  background-color: yellow; */
+  height: 100%;
+  width: 100%;
+  padding: 80px;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*Timer Section*/
+
+#timer,
+#score {
+  font-family: "Press Start 2P", cursive;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  cursor: auto;
+}
+
+#timer {
+  left: 25px;
+  top: 35px;
+}
+
+#score {
+  right: 25px;
+  top: 35px;
+}
+
+/*Impossible message pop up*/
+
+#impossibleMessage {
+  position: absolute;
+  left: 0;
+  top: -22.5%;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+
+  background-color: rgba(40, 54, 127, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 90px;
+  display: flex;
+  visibility: hidden;
+  transition: all 1s;
+}

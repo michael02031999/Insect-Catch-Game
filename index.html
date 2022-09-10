@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Users/michaelgalan/Desktop/SUMMER2022/InsectCatchGame/style.css"
+    />
+    <title>Insect Catch Game</title>
+  </head>
+  <body>
+    <div id="title">Catch The Insect</div>
+    <button id="playGame">Play Game</button>
+
+    <div id="page2">
+      <div id="subtitle">What is your "favorite" insect?</div>
+      <div id="insectChoices">
+        <button class="insectButton thisIsFly" id="fly">
+          Fly
+          <img class="bugs flyImg thisIsFly" src="images/index.png" />
+        </button>
+        <button class="insectButton thisIsMosquito" id="mosquito">
+          Mosquito
+          <img
+            class="bugs mosquitoImg thisIsMosquito"
+            src="images/mosquito_PNG18175.png"
+          />
+        </button>
+        <button class="insectButton thisIsSpider" id="spider">
+          Spider
+          <img
+            class="bugs spiderImg thisIsSpider"
+            src="images/spider_PNG12.png"
+          />
+        </button>
+        <button class="insectButton thisIsRoach" id="roach">
+          Roach
+          <img
+            class="bugs roachImg thisIsRoach"
+            src="images/roach_PNG12163.png"
+          />
+        </button>
+      </div>
+    </div>
+
+    <div id="theActualGame">
+      <div id="impossibleMessage">
+        Are you annoyed yet? <br />
+        You are playing an impossible game!!
+      </div>
+
+      <div id="timer">
+        Time: <span id="minute">00</span>:<span id="second">00</span>
+      </div>
+      <div id="score">Score:<span id="numberOfBugsKilled">0</span></div>
+      <div id="game"></div>
+    </div>
+    <script
+      defer
+      src="/Users/michaelgalan/Desktop/SUMMER2022/InsectCatchGame/app.js"
+    ></script>
+  </body>
+</html>
